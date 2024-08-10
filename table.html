@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image.html</title>
+    <style>
+        table,tr,td,th{
+            border:3px solid hsl(352, 100%, 50%);
+            text-align:center;
+           border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tables</h3>
+    <table style="width: 50%;">
+        <tr>
+            <th>Countries</th>
+            <th>States</th>
+            <th>Population</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Maharastra</td>
+            <td>25,050</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Sydney</td>
+            <td>18,500</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <h4>Rowspan Example</h4>
+    <table style="width: 50%;">
+        <tbody>
+
+            <tr>
+                 <td>Value<td>Value</td>
+               </td>
+                <td rowspan="2">Value</td>   <!--merge the 2 rows cell-->
+            </tr>
+            <tr>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>Value</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h4>Colspan Example</h4>
+    <table style="width: 50%;">
+        <tbody>
+            <tr>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+
+            <tr>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr>
+                <td colspan="3">Values</td>   <!--merging 2 collumns cells-->
+
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+</body>
+</html>
